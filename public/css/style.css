@@ -59,12 +59,16 @@ button {
     width: 100%;
     height: 100vh;
     position: relative;
-    background: url("https://i.pinimg.com/564x/6f/5a/b1/6f5ab1b470beeeeaf285bb451c63ac8f.jpg");
-    background-color: black;
+    background-color: #000000;
+    background-position: center;
     background-size: cover;
-    cursor: pointer;
+    background-repeat: no-repeat;
     -webkit-box-shadow: 0 0 5px #000;
     box-shadow: 0 0 5px #000;
+}
+.post a{
+    text-decoration: none;
+    color: white;
 }
 
 .overlay {
@@ -105,9 +109,10 @@ button {
     transition: all 0.7s;
 }
 
-.upvotes{
+.upvotes {
     margin-top: 30px;
 }
+
 .share {
     font-size: 12px;
     opacity: 0;
