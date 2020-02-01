@@ -147,8 +147,21 @@ button {
 }
 
 @media only screen and (max-width: 600px) {
+    .section-container {
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 90%;
+    }
+
     .logo {
-        grid-area: 1 / 1 /2 /3;
+        text-align: center;
+        grid-area: 1 / 1 /2 /2;
+    }
+
+    .logo img {
+        margin-top: 10px;
+        width: 50%;
+        height: 50%;
+        background-size: cover;
     }
 
     .left-sidebar {
@@ -156,6 +169,6 @@ button {
     }
 
     .main-section {
-        grid-area: 2 / 1 /3 /3;
+        grid-area: 2 / 1 /3 /2;
     }
 }
