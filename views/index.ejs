@@ -15,12 +15,21 @@
 <body>
     <div class="section-container">
         <div class="logo"><img src="static/assets/logo.png" alt=""></div>
-        <div class="left-sidebar"></div>
+        <div class="left-sidebar">
+            <div class="lead para">Type subreddit name in order to get top 5 posts of the day in that subreddit.
+                <hr>
+                <p>Click the Icon to search:</p>
+            </div>
+            <form id="content" onsubmit="getPosts()">
+                <input type="text" name="input" class="input" id="search-input">
+                <button type="reset" class="search" id="search-btn"></button>
+            </form>
+        </div>
         <div class="main-section">
             <div id="post-carousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
+                <ol class="carousel-indicators" id="carousel-indicators">
                 </ol>
-                <div class="carousel-inner">
+                <div class="carousel-inner" id="carousel-inner">
 
                 </div>
                 <a class="carousel-control-prev" href="#post-carousel" role="button" data-slide="prev">
@@ -39,11 +48,12 @@
         <button class="cn-button" id="cn-button">+</button>
         <div class="cn-wrapper" id="cn-wrapper">
             <ul>
-                <li><a href="#"><i class="fas fa-user-tie"></i></a></li>
-                <li><a href="#"><i class="fab fa-github"></i></a></li>
-                <li><a href="#"><i class="fas fa-home"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fas fa-at"></i></a></li>
+                <li><a href="https://www.facebook.com/oyeRazi" target="_blank"><i class="fas fa-user-tie"></i></a></li>
+                <li><a href="https://github.com/mrizwan18" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="/"><i class="fas fa-home"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/rizwan-shafique07/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a></li>
+                <li><a href="mailto:razibhatti1@gmail.com"><i class="fas fa-at"></i></a></li>
             </ul>
         </div>
         <div id="cn-overlay" class="cn-overlay"></div>
